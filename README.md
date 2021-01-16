@@ -15,12 +15,12 @@ Foobar is a Python library for dealing with word pluralization.
 5. Deploy your functions with `npm run deploy`
 
 ----
-###🕒 Cron Schedules
+### 🕒 Cron Schedules
 Two formats are supported to define your time intervals:
 * [Unix Cron String Format (Cloud Scheduler)](https://cloud.google.com/scheduler/docs/configuring/cron-job-schedules): `* * * * * `where each * is a number corresponding to `min, hour, day of month, month, day of week.` Not easy reading. If you have a hard time understanding this format, you’re not alone. Crontab Guru is like regexr but for understanding Cron schedule expressions 💯
 * [App Engine's English-like format](https://cloud.google.com/appengine/docs/standard/python/config/cronref#defining_the_cron_job_schedule): Keywords of every, minute, hours, days, weekday names (wed, fri etc) make for easy comprehension. Some examples: `every 12 hours.every 6 hours mon, wed`. Read the docs for more information and examples.
 -----
-###📝 Writing Scheduled Cloud Functions
+### 📝 Writing Scheduled Cloud Functions
 ```Typescript
 import * as functions from "firebase-functions"
 import * as admin from "firebase-admin"
